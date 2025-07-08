@@ -1,30 +1,31 @@
 package com.davidsantiagoact2.clases;
 
 public class Cuidador {
-    private int idCuidador;
-    private String nombre;
+    private int id_cuidador;
     private String especialidad;
+    private int id_personal;
+    
 
-    public Cuidador(int idCuidador, String nombre, String especialidad) {
-        this.idCuidador = idCuidador;
-        this.nombre = nombre;
+    public Cuidador(int id_cuidador, int id_personal, String especialidad) {
+        this.id_cuidador = id_cuidador;
+        this.id_personal = id_personal;
         this.especialidad = especialidad;
     }
 
     public int getIdCuidador() {
-        return idCuidador;
+        return id_cuidador;
     }
 
-    public void setIdCuidador(int idCuidador) {
-        this.idCuidador = idCuidador;
+    public void setIdCuidador(int id_cuidador) {
+        this.id_cuidador = id_cuidador;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getIdpersonal(){
+        return id_personal;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void SetIdPersonal(int id_personal){
+        this.id_personal = id_personal;
     }
 
     public String getEspecialidad() {

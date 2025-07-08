@@ -4,11 +4,13 @@ public class Especie {
     private int idEspecie;
     private String nombreComun;
     private String nombreCientifico;
+    private String tipo;
 
-    public Especie(int idEspecie, String nombreComun, String nombreCientifico) {
+    public Especie(int idEspecie, String nombreComun, String nombreCientifico, String tipo) {
         this.idEspecie = idEspecie;
         this.nombreComun = nombreComun;
         this.nombreCientifico = nombreCientifico;
+        this.tipo = tipo;
     }
 
     public int getIdEspecie() {
@@ -31,6 +33,13 @@ public class Especie {
         this.nombreCientifico = nombreCientifico;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo){
+        this.tipo = tipo;
+    }
     @Override
     public String toString() {
         return "ID: " + idEspecie + ", Nombre común: " + nombreComun + ", Nombre científico: " + nombreCientifico;
