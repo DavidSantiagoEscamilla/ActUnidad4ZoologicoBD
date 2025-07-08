@@ -1,6 +1,8 @@
-package com.davidsantiagoact2;
+package com.davidsantiagoact2.repositorios;
 
 import java.util.List;
+
+import com.davidsantiagoact2.clases.Animal;
 
 public interface RepositorioAnimal {
     void crear(Animal animal);

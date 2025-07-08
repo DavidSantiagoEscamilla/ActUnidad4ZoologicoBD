@@ -2,6 +2,9 @@ package com.davidsantiagoact2;
 
 import java.util.List;
 
+import com.davidsantiagoact2.clases.Animal;
+import com.davidsantiagoact2.repositorios.RepositorioAnimal;
+
 public class ConsultarAnimalUseCase {
     private final RepositorioAnimal repositorio;
 

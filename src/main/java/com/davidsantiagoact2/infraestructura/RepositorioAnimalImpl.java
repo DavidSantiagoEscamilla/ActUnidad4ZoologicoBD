@@ -1,6 +1,6 @@
-package com.davidsantiagoact2.repositorios;
+package com.davidsantiagoact2.infraestructura;
 
-import com.davidsantiagoact2.Animal;
+import com.davidsantiagoact2.clases.Animal;
 import com.davidsantiagoact2.repositorios.RepositorioAnimal;
 
 import java.util.ArrayList;

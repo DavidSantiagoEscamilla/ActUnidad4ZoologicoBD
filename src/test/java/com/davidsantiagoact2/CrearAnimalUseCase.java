@@ -1,5 +1,8 @@
 package com.davidsantiagoact2;
 
+import com.davidsantiagoact2.clases.Animal;
+import com.davidsantiagoact2.repositorios.RepositorioAnimal;
+
 public class CrearAnimalUseCase {
     private final RepositorioAnimal repositorio;
 

@@ -1,5 +1,7 @@
 package com.davidsantiagoact2;
 
+import com.davidsantiagoact2.repositorios.RepositorioAnimal;
+
 public class EliminarAnimalUseCase {
     private final RepositorioAnimal repositorio;
 

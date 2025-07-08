@@ -1,7 +1,8 @@
 package com.davidsantiagoact2.repositorios;
 
-import com.davidsantiagoact2.Cuidador;
 import java.util.List;
+
+import com.davidsantiagoact2.clases.Cuidador;
 
 public interface RepositorioCuidador {
     void crear(Cuidador cuidador);

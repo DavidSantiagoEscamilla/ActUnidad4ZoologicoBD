@@ -1,4 +1,4 @@
-package com.davidsantiagoact2;
+package com.davidsantiagoact2.clases;
 
 public class Cuidado {
     private int idAnimal;
