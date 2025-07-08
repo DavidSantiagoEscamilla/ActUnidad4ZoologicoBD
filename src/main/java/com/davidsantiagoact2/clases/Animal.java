@@ -2,6 +2,9 @@ package com.davidsantiagoact2.clases;
 
 import java.time.LocalDate;
 
+import com.davidsantiagoact2.infraestructura.RepositorioAnimalImpl;
+import com.davidsantiagoact2.repositorios.RepositorioAnimal;
+
 public class Animal {
     private int idAnimal;
     private String nombre;
@@ -10,6 +13,8 @@ public class Animal {
     private int idEspecie;
     private int idHabitat;
     private int idPersonal;
+    private final RepositorioAnimal repositorioAnimal = new RepositorioAnimalImpl();
+
 
     public Animal(int idAnimal, String nombre, LocalDate fechaNacimiento, String sexo, int idEspecie, int idHabitat, int idPersonal) {
         this.idAnimal = idAnimal;
