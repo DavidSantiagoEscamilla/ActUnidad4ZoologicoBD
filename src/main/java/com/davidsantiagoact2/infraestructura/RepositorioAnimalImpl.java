@@ -15,16 +15,16 @@ public class RepositorioAnimalImpl implements RepositorioAnimal {
     }
 
     @Override
-    public Animal consultarPorId(int id) {
-        return animales.stream()
-                       .filter(a -> a.getIdAnimal() == id)
-                       .findFirst()
-                       .orElse(null);
+    public List<Animal> consultarTodos() {
+        return new ArrayList<>(animales);
     }
 
     @Override
-    public List<Animal> consultarTodos() {
-        return new ArrayList<>(animales);
+    public Animal consultarPorId(int id) {
+        return animales.stream()
+                .filter(a -> a.getIdAnimal() == id)
+                .findFirst()
+                .orElse(null);
     }
 
     @Override

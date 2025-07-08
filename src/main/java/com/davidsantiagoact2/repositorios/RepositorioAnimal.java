@@ -1,13 +1,12 @@
 package com.davidsantiagoact2.repositorios;
 
-import java.util.List;
-
 import com.davidsantiagoact2.clases.Animal;
+import java.util.List;
 
 public interface RepositorioAnimal {
     void crear(Animal animal);
-    Animal consultarPorId(int id);
     List<Animal> consultarTodos();
+    Animal consultarPorId(int id);
     void actualizar(Animal animal);
     void eliminar(int id);
 }
