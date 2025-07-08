@@ -6,9 +6,9 @@ public class Cuidador {
     private int id_personal;
     
 
-    public Cuidador(int id_cuidador, int id_personal, String especialidad) {
-        this.id_cuidador = id_cuidador;
-        this.id_personal = id_personal;
+    public Cuidador(int idCuidador, String nombre, String especialidad) {
+        this.idCuidador = idCuidador;
+        this.nombre = nombre;
         this.especialidad = especialidad;
     }
 
