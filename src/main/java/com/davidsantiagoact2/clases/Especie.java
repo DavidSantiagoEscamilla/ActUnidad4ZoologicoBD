@@ -2,27 +2,19 @@ package com.davidsantiagoact2.clases;
 
 public class Especie {
     private int idEspecie;
-    private String nombreComun;
     private String nombreCientifico;
+    private String nombreComun;
     private String tipo;
 
-    public Especie(int idEspecie, String nombreComun, String nombreCientifico, String tipo) {
+    public Especie(int idEspecie, String nombreCientifico, String nombreComun, String tipo) {
         this.idEspecie = idEspecie;
-        this.nombreComun = nombreComun;
         this.nombreCientifico = nombreCientifico;
+        this.nombreComun = nombreComun;
         this.tipo = tipo;
     }
 
     public int getIdEspecie() {
         return idEspecie;
-    }
-
-    public String getNombreComun() {
-        return nombreComun;
-    }
-
-    public void setNombreComun(String nombreComun) {
-        this.nombreComun = nombreComun;
     }
 
     public String getNombreCientifico() {
@@ -33,15 +25,24 @@ public class Especie {
         this.nombreCientifico = nombreCientifico;
     }
 
+    public String getNombreComun() {
+        return nombreComun;
+    }
+
+    public void setNombreComun(String nombreComun) {
+        this.nombreComun = nombreComun;
+    }
+
     public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo){
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
     @Override
     public String toString() {
-        return "ID: " + idEspecie + ", Nombre común: " + nombreComun + ", Nombre científico: " + nombreCientifico;
+        return idEspecie + " - " + nombreComun + " (" + nombreCientifico + ") - Tipo: " + tipo;
     }
 }
