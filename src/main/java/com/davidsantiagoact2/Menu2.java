@@ -1,7 +1,10 @@
 package com.davidsantiagoact2;
 
+import com.davidsantiagoact2.clases.ExamenMedico;
 import com.davidsantiagoact2.interfaz.GuiAnimal;
 import com.davidsantiagoact2.interfaz.GuiEspecie;
+import com.davidsantiagoact2.interfaz.GuiEspecieHabitat;
+import com.davidsantiagoact2.interfaz.GuiExamenMedico;
 import com.davidsantiagoact2.interfaz.GuiCuidador;
 
 import javax.swing.*;
@@ -21,7 +24,8 @@ public class Menu2 {
         frame.add(crearBoton("Gestionar Animales", () -> new GuiAnimal()));
         frame.add(crearBoton("Gestionar Especies", () -> new GuiEspecie().setVisible(true)));
         frame.add(crearBoton("Gestionar Cuidadores", () -> new GuiCuidador().setVisible(true)));
-        frame.add(crearBoton("Gestionar Especie-Hábitat", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
+        frame.add(crearBoton("Gestionar Examen-Medico", () -> { GuiExamenMedico ventana = new GuiExamenMedico(); ventana.setVisible(true);}));
+        frame.add(crearBoton("Gestionar Especie-Hábitat", () -> new GuiEspecieHabitat().setVisible(true)));
         frame.add(crearBoton("Gestionar Cuidado", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
         frame.add(crearBoton("Gestionar Zonas", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
         frame.add(crearBoton("Gestionar Hábitat", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
