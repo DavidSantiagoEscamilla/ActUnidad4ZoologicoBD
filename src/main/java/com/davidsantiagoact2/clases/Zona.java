@@ -3,12 +3,10 @@ package com.davidsantiagoact2.clases;
 public class Zona {
     private int idZona;
     private String nombre;
-    private String descripcion;
 
-    public Zona(int idZona, String nombre, String descripcion) {
+    public Zona(int idZona, String nombre) {
         this.idZona = idZona;
         this.nombre = nombre;
-        this.descripcion = descripcion;
     }
 
     public int getIdZona() {
@@ -27,11 +25,8 @@ public class Zona {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    @Override
+    public String toString() {
+        return "Zona ID: " + idZona + " - Nombre: " + nombre;
     }
 }

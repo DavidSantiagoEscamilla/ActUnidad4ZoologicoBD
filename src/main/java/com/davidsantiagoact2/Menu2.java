@@ -2,9 +2,13 @@ package com.davidsantiagoact2;
 
 import com.davidsantiagoact2.clases.ExamenMedico;
 import com.davidsantiagoact2.interfaz.GuiAnimal;
+import com.davidsantiagoact2.interfaz.GuiCuidado;
 import com.davidsantiagoact2.interfaz.GuiEspecie;
 import com.davidsantiagoact2.interfaz.GuiEspecieHabitat;
 import com.davidsantiagoact2.interfaz.GuiExamenMedico;
+import com.davidsantiagoact2.interfaz.GuiHabitat;
+import com.davidsantiagoact2.interfaz.GuiItinerario;
+import com.davidsantiagoact2.interfaz.GuiZona;
 import com.davidsantiagoact2.interfaz.GuiCuidador;
 
 import javax.swing.*;
@@ -26,10 +30,11 @@ public class Menu2 {
         frame.add(crearBoton("Gestionar Cuidadores", () -> new GuiCuidador().setVisible(true)));
         frame.add(crearBoton("Gestionar Examen-Medico", () -> { GuiExamenMedico ventana = new GuiExamenMedico(); ventana.setVisible(true);}));
         frame.add(crearBoton("Gestionar Especie-Hábitat", () -> new GuiEspecieHabitat().setVisible(true)));
-        frame.add(crearBoton("Gestionar Cuidado", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
-        frame.add(crearBoton("Gestionar Zonas", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
-        frame.add(crearBoton("Gestionar Hábitat", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
-        frame.add(crearBoton("Gestionar Itinerarios", () -> JOptionPane.showMessageDialog(null, "Próximamente...")));
+        frame.add(crearBoton("Gestionar Cuidado", () -> new GuiCuidado().setVisible(true)));
+        frame.add(crearBoton("Gestionar Zonas", () -> new GuiZona().setVisible(true)));
+        frame.add(crearBoton("Gestionar Hábitat", () -> new GuiHabitat().setVisible(true)));
+        frame.add(crearBoton("Gestionar Itinerarios", () -> new GuiItinerario().setVisible(true)));
+
 
         JButton salirBtn = new JButton("Salir");
         salirBtn.addActionListener(e -> System.exit(0));
